@@ -37,7 +37,6 @@ func (g Game) Init(u string) {
 
 func (g Game) Command(c string) {
 	fmt.Println("you typed: ", c)
-	fmt.Print("command: ")
 }
 
 func main() {
@@ -53,5 +52,6 @@ func main() {
 			break
 		}
 		g.Command(input)
+		fmt.Print("command: ")
 	}
 }
